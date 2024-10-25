@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 120vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.682);
+}
+
+.container H1{
+    font-size: 48px; /* Adjust font size as needed */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0000, #ff9900, #00ff00, #0000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    /* transition: background0.5s ease; Smooth transition for the hover effect */
+    /* transition: 0.5S; */
+}
+
+
+
+.mainbox{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mainbox-2{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.mainbox .box{
+    width: 250px;
+    height: 230px;
+    /* background-color: aqua; */
+    box-shadow: 0px  0px 20px rgb(160, 0, 0);
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+.mainbox-2 .box{
+    
+
+
+
+    width: 250px;
+    height: 230px;
+
+    box-shadow: 0px  0px 20px rgb(0, 7, 145);
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: rgba(0, 0, 0, 0.445); */
+
+
+
+
+        
+      }
+
+
+
+
+
+
+
+
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.mainbox .box h2{
+    font-size: 30px;
+    color: rgba(215, 209, 39, 0.773);
+    text-align: center;
+}
+.mainbox-2 .box h2{
+    font-size: 30px;
+    color: rgba(205, 76, 7, 0.773);
+    text-align: center;
+}
+
+/* .mainbox button{
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    color: white;
+    background-color: green;
+} */
+
+.mainbox button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color:rgb(0, 58, 0);
+    border: 3px solid transparent;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mainbox button::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, rgb(93, 0, 0), rgb(0, 255, 221));
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .mainbox button:hover {
+    transform: scale(0.95); /* Zoom out effect */
+    border-color: transparent; /* Hide the main button border */
+  }
+  
+  .mainbox button:hover::before {
+    opacity: 1; /* Show the gradient border on hover */
+  }
+
+/* .mainbox-2 button{
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(255, 0, 174);
+} */
+
+
+.mainbox-2 button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #040519;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mainbox-2 button::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, rgb(23, 0, 169), rgb(128, 0, 0));
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .mainbox-2 button:hover {
+    transform: scale(0.95); /* Zoom out effect */
+    border-color: transparent; /* Hide the main button border */
+  }
+  
+  .mainbox-2 button:hover::before {
+    opacity: 1; /* Show the gradient border on hover */
+  }
+
+
+
+  .mainbox button a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+  }
+
+  .mainbox-2 button a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+  }
+
+
+  @media (max-width:768px) {
+
+
+
+    .container{
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.492);
+        gap: 30px;
+    }
+    
+
+
+    .mainbox{
+      width: 100%;
+      height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+
+    .mainbox-2{
+        width: 100%;
+        height: auto;
+
+        flex-wrap: wrap;
+      
+        gap: 30px;
+    }
+
+    .mainbox .box{
+        width: 200px;
+        height: 200px;
+    }
+    
+
+    .mainbox-2 .box{
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .mainbox h2{
+        font-size: 20px; /* Adjust font size as needed */
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff0000,  #0000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        /* transition: background0.5s ease; Smooth transition for the hover effect */
+        /* transition: 0.5S; */
+        
+    }
+
+    .mainbox-2 h2{
+
+        font-size: 20px; /* Adjust font size as needed */
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff0000,  #0000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        /* transition: background0.5s ease; Smooth transition for the hover effect */
+        /* transition: 0.5S; */
+        
+
+    }
+
+    .mainbox .box:nth-child(4){
+        padding: 20px;
+    }
+
+
+    
+
+    }
+   
+  
